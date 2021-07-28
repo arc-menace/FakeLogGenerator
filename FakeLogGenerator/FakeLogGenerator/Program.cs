@@ -148,6 +148,7 @@ namespace FakeLogGenerator
                 IngWords.AddRange(ExistingWords);
             }
 
+            //Load existing phrases
             using (var tw = new StreamReader(phrasesPath, true))
             {
                 fileContents = tw.ReadToEnd();
@@ -159,6 +160,7 @@ namespace FakeLogGenerator
                 Phrases.AddRange(ExistingWords);
             }
 
+            //Create random phrases by randomly selecting from the two lists
             Random random = new Random();
             while(true)
             {
@@ -180,6 +182,7 @@ namespace FakeLogGenerator
         {
             Console.Write("\r>> ");
             var chars = line.ToCharArray();
+            //print out string one character at a time
             foreach(var ch in chars)
             {
                 Console.Write(ch);
@@ -188,6 +191,7 @@ namespace FakeLogGenerator
             Console.WriteLine();
             Console.Write(">> ");
 
+            //pause before starting next line.
             int timeoutMilli = random.Next(100, 1000);
             Thread.Sleep(timeoutMilli);
         }
