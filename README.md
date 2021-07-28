@@ -7,3 +7,7 @@ This is a project I made for fun that prints silly, non sensical log messages th
 Please feel free to add to the word lists to make more, fun combinations. Just make your changes and submit a PR. I would like to make this into a JavaScript library, and maybe even a microservice/api as well, using those files (or others if I think of a better way).
 
 I am aware that using Thread.Sleep(Milliseconds) is not something that would probably be useful for a real application, I just thought the code would showcase how I envisioned these lists could be used.
+
+Credits: 
+Code: Me, Joe Hahn
+Inspiration: Zack Freedman in [this](https://www.youtube.com/watch?v=sxfJOMjZeIs&t=987s) video
